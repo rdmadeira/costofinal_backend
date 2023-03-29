@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rdmadeira/nucgenda.git"
+    "url": "git+https://github.com/rdmadeira/costofinal_backend"
   },
   "author": "Rodrigo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rdmadeira/nucgenda/issues"
+    "url": "https://github.com/rdmadeira/costofinal/issues"
   },
   "homepage": "https://github.com/rdmadeira/nucgenda#readme",
   "dependencies": {
