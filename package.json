@@ -5,7 +5,7 @@
   "description": "Costofinal es una CLI creado por nodejs",
   "main": "index.js",
   "bin": {
-    "nucgenda": "index.js"
+    "costofinal": "index.js"
   },
   "scripts": {
     "test": "\"echo \\\"Error: no test specified\\\" && exit 1\""
@@ -24,7 +24,8 @@
     "chalk": "^5.2.0",
     "commander": "^10.0.0",
     "figlet": "^1.5.2",
-    "inquirer": "^9.1.5"
+    "inquirer": "^9.1.5",
+    "link": "^1.5.1"
   },
   "devDependencies": {
     "eslint": "^8.28.0",
