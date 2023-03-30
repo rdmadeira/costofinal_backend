@@ -25,7 +25,8 @@
     "commander": "^10.0.0",
     "figlet": "^1.5.2",
     "inquirer": "^9.1.5",
-    "link": "^1.5.1"
+    "link": "^1.5.1",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "eslint": "^8.28.0",
