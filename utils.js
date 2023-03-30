@@ -5,16 +5,15 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url)); // Para ES6 modules, la variable del global __dirname no existe, por eso hay que usar la función. Simula el valor de __dirname que existe en commonJS.
 /* console.log(__dirname);
 console.log(path); */
-const contactsLocation = path.join(__dirname, 'contacts.json');
+const productsLocation = path.join(__dirname, 'productos.json');
 
-const saveContacts = (contacts) => {
-  fs.writeFileSync(contactsLocation, JSON.stringify(contacts));
+const saveProducts = (contacts) => {
+  fs.writeFileSync(productsLocation, JSON.stringify(contacts));
 };
 
-const getContacts = () => {
+const getProducts = () => {
   try {
-    console.log('object');
-    return JSON.parse(fs.readFileSync(contactsLocation));
+    return JSON.parse(fs.readFileSync(productsLocation));
   } catch (error) {
     if (error.code === 'ENOENT') {
       return {};
@@ -24,4 +23,4 @@ const getContacts = () => {
   }
 };
 
-export { saveContacts, getContacts };
+export { saveProducts, getProducts };
