@@ -58,6 +58,7 @@ program
           codigo: answers.codigo,
           medida: answers.medida,
           precio: answers.precio,
+          descripcion: answers.productDescrip,
           id: uuidv4(),
         };
 

@@ -4,6 +4,7 @@ const productTypePrompt = [
 
 const productPrompt = [
   { name: 'productName', message: 'Nombre Producto' },
+  { name: 'productDescrip', message: 'Descripción del producto' },
   { name: 'codigo', message: 'Codigo del Producto' },
   { name: 'medida', message: 'Medida del producto' },
   { type: 'number', name: 'precio', message: 'Precio del producto' },
