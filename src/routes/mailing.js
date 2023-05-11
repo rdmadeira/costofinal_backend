@@ -3,6 +3,6 @@ import { mailingGetHandler } from '../handlers/mailingHandlers.js';
 
 const router = Router();
 
-router.get('/', mailingGetHandler);
+router.post('/', mailingGetHandler);
 
 export default router;

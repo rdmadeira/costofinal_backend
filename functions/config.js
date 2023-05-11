@@ -1,6 +1,6 @@
-import nodemailer from 'nodemailer';
-import path from 'path';
-import dotenv from 'dotenv';
+const nodemailer = require('nodemailer');
+const path = require('path');
+const dotenv = require('dotenv');
 
 const dotenvPath = path.join(process.cwd(), '.env');
 dotenv.config({ path: dotenvPath });
@@ -19,4 +19,4 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-export default transporter;
+module.exports = { transporter };

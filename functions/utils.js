@@ -1,10 +1,10 @@
-import fs from 'fs';
-import path from 'path';
-import transporter from './config.js';
+const fs = require('fs');
+const path = require('path');
+const transporter = require('./config.js');
 
 const attachmPath = path.join(process.cwd(), 'src/nodemailer/attachments');
 
-export const sendEmailOrder = (email, order) => {
+const sendEmailOrder = (email, order) => {
   const sendMailOptions = {
     from: 'compras.costofinal@gmail.com',
     to: email,
@@ -34,7 +34,7 @@ export const sendEmailOrder = (email, order) => {
   });
 };
 
-export const createFileandSend = (body) => {
+const createFileandSend = (body) => {
   console.log(body);
   const filePath = path.join(attachmPath, body.id + '.txt');
   const data = `
@@ -51,3 +51,5 @@ export const createFileandSend = (body) => {
     }
   });
 };
+
+module.exports = { createFileandSend };

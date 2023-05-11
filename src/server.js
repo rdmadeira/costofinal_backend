@@ -1,6 +1,9 @@
 import express from 'express';
+import dotenv from 'dotenv';
+
 import mailingRouter from './routes/mailing.js';
 
+dotenv.config();
 const server = express();
 const PORT = process.env.PORT || 3001;
 
