@@ -13,6 +13,14 @@ const appMail = express();
 const PORT = process.env.PORT || 3001;
 
 appMail.use(express.json());
+appMail.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.header(
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept'
+  );
+  next();
+});
 appMail.use('/api/mailing', mailingRouter);
 
 appMail.listen(PORT, () => console.log('Listening server on port ' + PORT));
