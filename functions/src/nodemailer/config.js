@@ -1,9 +1,11 @@
-const nodemailer = require('nodemailer');
-const path = require('path');
-const dotenv = require('dotenv');
+import nodemailer from 'nodemailer';
+import path from 'path';
+import dotenv from 'dotenv';
 
-const dotenvPath = path.join(process.cwd(), '.env');
+const dotenvPath = path.join(process.cwd(), 'functions/.env');
 dotenv.config({ path: dotenvPath });
+
+console.log(process.env.P);
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -19,4 +21,4 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-module.exports = { transporter };
+export default transporter;
