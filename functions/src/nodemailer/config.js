@@ -2,10 +2,11 @@ import nodemailer from 'nodemailer';
 import path from 'path';
 import dotenv from 'dotenv';
 
-const dotenvPath = path.join(process.cwd(), 'functions/.env');
+const dotenvPath = path.join(process.cwd(), '.env');
 dotenv.config({ path: dotenvPath });
 
-console.log(process.env.P);
+console.log('congig.js:8 -', process.cwd());
+console.log('congig.js:9 -', process.env.P);
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',

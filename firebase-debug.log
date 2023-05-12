@@ -3734,3 +3734,4 @@ This file is being treated as an ES module because it has a '.js' file extension
 [debug] [2023-05-11T02:06:29.061Z] shutdown requested via /__/quitquitquit
 
 [info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[debug] [2023-05-11T02:08:46.807Z] Received signal SIGHUP 1
